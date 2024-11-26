@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#hero {
+  height: 100vh;
+  background: url("https://images.pexels.com/photos/140831/pexels-photo-140831.jpeg?auto=compress&cs=tinysrgb&w=600")
+    no-repeat center center/cover;
+}
+#hero nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  background-color: #333;
+}
+#hero nav h1 {
+  color: white;   
+}
+#hero nav span {
+  color: green;
+}
+#hero nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+#hero nav ul li a:hover{
+color: blue;
+border-bottom: 3px solid white;
+
+}
+
+#hero nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+#hero::before{
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0,0, 0.6);
+}
+#hero *{
+    z-index: 10;
+}
+
+#hero .content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#hero .content h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+#hero .content p {
+  font-size: 24px;
+}
+.mybton {
+  font-size: 24px;
+  background-color: green;
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  border: 2px solid white;
+  font-weight: 600;
+  border-radius: 20px;
+}
+.mybton:hover{
+  background-color: white;
+  color: green;
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100px;
+  height: 100px;
+  background: rgba(0, 0, 0, 0,6);
+}
+.hero *{
+  z-index: 20;
+}
+#click{
+  display: none;
+}
+lable{
+  margin-right: 50px;
+  font-size: large;
+  display: none;
+}
+}
+#about h1 {
+  color: black;
+  font-size: 60px;
+  text-align: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.card img {
+  height: 500px;
+  width: 300px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.blog section{
+  margin-top: 60px;
+}
+.blog-section h1{
+   font-size: 60px;
+   text-align: center;
+}
+.blog-section .container{
+  margin: 20px 50px;
+}
+.blog-section .container img{
+  width: 60%;
+  height: 500px;
+}
+.blog-section .container .blog-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+/*media querry*/
+/*tablet view*/
+
+@media screen and (max-width: 768px) {
+  lable{
+    display: block;
+  }
+ .hero nav ul{
+  flex-direction: column;
+  position:absolute ;
+  top:80px;
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  display: none;
+ }
+ #click:checked ~ .hero nav ul{
+  display: block;
+ }
+}
+
+  

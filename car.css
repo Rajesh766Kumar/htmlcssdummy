@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+#hero {
+    height: 100vh;
+    background: url(https://images.tv9hindi.com/wp-content/uploads/2022/06/rolls-royce-cars.jpg) no-repeat center center/cover;
+}    
+}
+#hero nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: grey;
+}
+#hero nav h1 {
+    color: white;
+}
+#hero nav ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+#hero nav ul li a{
+    text-decoration: none;
+    color: azure;
+    font-size: 20px
+}
+#hero .content{
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+#hero .content h1{
+    color: blanchedalmond;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+#hero .content p{
+    font-size: 25px;
+    color:blanchedalmond ;
+}
+.mybton{
+    font-size: 24px;
+    background-color: blue;
+    color: bisque;
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid white;
+    font-weight: 400;
+    border-radius: 20px;
+}
